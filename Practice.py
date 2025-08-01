@@ -1,33 +1,17 @@
+class car:
+    def __init__(self, color, speed):
+        self.color=color
+        self.speed=speed
+    def drive(self):
+        print(f"The information{self.color},{self.speed}")
 
-class Mobile:
-    def __init__(self,brand,price): #A constructor method
-        self.brand=brand
-        self.price=price
+d1=car("red",150)
+d2=car("red",1550)
+d3=car("red",15540)
+d4=car("red",154440)
 
-    def show_info(self):
-        print(f"the brand name is {self.brand},and price is {self.price}")
-    
-brand_info = Mobile("nokia",234)
-brand_info.show_info()
+d1.drive()
+d2.drive()
+d3.drive()
+d4.drive()
 
-
-
-class Mobile:
-    def mobile_info(self,brand,price):
-        self.brand=brand
-        self.price=price
-    def show_info(self):
-        print(f"the brand name is {self.brand},and price is {self.price}")
-m1= Mobile()
-m1.mobile_info("NOkia",45)
-m1.show_info()
-
-class Student:
-    def __init__(self, name):
-        self.name = name
-
-s1 = Student("Ali")
-s1 = Student("Zara")
-
-print(s1.name)  # Ali
-print(s1.name)  # Zara
